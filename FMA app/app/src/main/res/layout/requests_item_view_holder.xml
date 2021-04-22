@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="10dp"
+    android:id="@+id/layout_request_item_view_lo"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/layout_request_item_view_requestTitle_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="@string/ac_is_not_working"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/layout_request_item_view_requestTime_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/layout_request_item_view_requestArrow_right_iv"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="@string/post_time"
+        android:textSize="15sp" />
+    <ImageView
+        android:id="@+id/layout_request_item_view_requestArrow_right_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_arrow_right"/>
+    <TextView
+        android:id="@+id/layout_request_item_view_requestBody_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/layout_request_item_view_requestArrow_right_iv"
+        android:hint="An suas viderer pro. Vis cu magna altera, ex his vivendo atomorum." />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

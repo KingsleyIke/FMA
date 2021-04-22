@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:text="@string/food"
+
+        android:paddingVertical="5dp"
+        android:background="@drawable/tab_bg"/>
+    <TextView
+        android:id="@+id/tab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:text="@string/apartment"
+
+        android:paddingVertical="5dp"
+        android:background="@drawable/tab_bg"/>
+    <TextView
+        android:id="@+id/tab3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:text="@string/appliances"
+
+        android:paddingVertical="5dp"
+        android:background="@drawable/tab_bg"/>
+    <TextView
+        android:id="@+id/tab4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:text="@string/others"
+
+        android:paddingVertical="5dp"
+        android:background="@drawable/tab_bg"/>
+
+</LinearLayout>

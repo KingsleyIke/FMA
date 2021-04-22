@@ -1,0 +1,16 @@
+{
+  "client_id": "5f259f13-b642-4dcf-b7da-e61f9dcdab0e",
+  "authorization_user_agent": "DEFAULT",
+  "redirect_uri": "msauth://com.decagon.facilitymanagementapp_group_one/Y0GG2KDR%2B0TzYv%2FYobq3eOhomXc%3D",
+  "broker_redirect_uri_registered": false,
+  "account_mode": "SINGLE",
+  "authorities": [
+    {
+      "type": "AAD",
+      "audience": {
+        "type": "AzureADMyOrg",
+        "tenant_id": "364cc942-1cec-4791-b264-cde4a0a816f6"
+      }
+    }
+  ]
+}

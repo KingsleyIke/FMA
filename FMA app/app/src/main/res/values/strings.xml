@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">FacilityManagementApp-Group-One</string>
+
+    <!--    onBoarding Page-->
+    <string name="fragment_onboarding_app_title">FACILITY\nMANAGEMENT\nAPP</string>
+    <string name="fragment_onboarding_button_text">Get started</string>
+    <string name="fragment_onboarding_app_subtitle">Manage all your complains in one place</string>
+
+    <!--    Authentication page-->
+    <string name="fragment_dashboard_text">Dashboard</string>
+    <string name="fragment_auth_alert_dialog_text">You have been successfully authorized and logged in.</string>
+
+
+    <!-- Single Complaints Screen-->
+    <string name="single_comment_name">Jorge Wattinson</string>
+    <string name="fragment_complaint_comment_title">AC Not Working</string>
+    <string name="fragment_complaint_num_likes">6473</string>
+    <string name="fragment_comment_details_coment_hint">Write a comment</string>
+    <string name="fragment_complaints_num_comments">342</string>
+    <string name="fragment_complaints_complaint_body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. \n\nPraesent luctus augue ac bibendum rutrum. Nunc accumsan est ligula, a mollis nisi sollicitudin et. Vestibulum facilisis mattis cursus. Pellentesque posuere enim et eros hendrerit</string>
+    
+    <string name="my_requests">My Requests</string>
+    <string name="search">Search</string>
+    <string name="make_a_new_request">Make a new request</string>
+    <string name="you_do_not_have_a_pending_request">You do not have a pending request…</string>
+    <string name="ac_is_not_working">AC is NOT working</string>
+    <string name="post_time">Today</string>
+    <string name="feeds_page_title">Feeds</string>
+    <string name="food">Food</string>
+    <string name="apartment">Apartment</string>
+    <string name="appliances">Appliances</string>
+    <string name="others">Others</string>
+    <string name="add_new_request_button">Add new request button</string>
+
+
+    <!-- Failed authorization page -->
+    <string name="fragment_auth_waiting_for_authentication">Please wait, while you are authorized…</string>
+    <string name="fragment_failed_authorization_back">Back</string>
+    <string name="fragment_failed_authorization_tryAgain">Try Again</string>
+    <string name="fragment_failed_authorization_errorMessage">Something went wrong. We\'re doing \neverything to fix it and should be up \nand running soon.</string>
+    <string name="fragment_failed_authorization_ooops">Ooops....</string>
+    <string name="fragment_failed_authorization_errorImage">An error image</string>
+    <string name="single_comments_2hrs">2 hours ago</string>
+    <string name="single_comment_comment_body">Dictatorem eum legati gratulantes consultant</string>
+    <string name="single_comment_reply">Reply</string>
+    <string name="fragment_complaint_details_comments_str">Comments</string>
+    <string name="submit_a_new_request">Submit a new Request</string>
+    <string name="feed">Feed</string>
+    <string name="subject">Subject</string>
+    <string name="description">Description</string>
+    <string name="submit">Submit</string>
+    <string name="back">Back</string>
+    <string name="request_subject">Request subject…</string>
+    <string name="request_body">Request body…</string>
+    <string name="back_arrow_button">back arrow button</string>
+
+    <!-- Profile Fragment -->
+    <string name="fragment_profile_name_placeholder">Augustine Ohineme</string>
+    <string name="fragment_profile_stackAndSquad_placeholder">Android - SQ006</string>
+    <string name="fragment_profile_name">Name</string>
+    <string name="fragment_profile_email">Email</string>
+    <string name="fragment_profile_emailValue">austine@decagon.dev</string>
+    <string name="fragment_profile_squad">Squad</string>
+    <string name="fragment_profile_squadValue">006</string>
+    <string name="fragment_profile_stack">Stack</string>
+    <string name="fragment_profile_stackValue">Android</string>
+    <string name="fragment_profile_mobile">Mobile</string>
+    <string name="fragment_profile_mobileValue">+234 801 234 5678</string>
+    <string name="fragment_profile_logOut">Log out</string>
+    <string name="fragment_profile_image">Profile image</string>
+    <string name="fragment_profile_edit_tv">Edit</string>
+
+    <!-- Edit Profile Fragment -->
+    <string name="edit_fragment_profile_back_tv">Back</string>
+    <string name="edit_fragment_profile_edit">Update Profile</string>
+    <string name="edit_fragment_title">Profile</string>
+    <string name="upload_in_progress">Please wait while image upload completes</string>
+    <string name="fragment_new_request_spinner_text">Select a feed category</string>
+
+    <!--    New Request Screen-->
+    <string-array name="feed_categories">
+        <item>Food</item>
+        <item>Apartment</item>
+        <item>Appliances</item>
+        <item>Others</item>
+    </string-array>
+</resources>

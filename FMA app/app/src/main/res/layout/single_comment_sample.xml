@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/single_comment_image_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/avatar_female_one"
+            app:shapeAppearanceOverlay="@style/round_image" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/single_comment_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/single_comment_name"
+            android:fontFamily="@font/montserrat"
+            android:layout_toEndOf="@+id/single_comment_image_iv"
+            android:layout_alignTop="@id/single_comment_image_iv"
+            android:textColor="@color/custom_black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+             />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/single_comment_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/single_comments_2hrs"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:layout_toEndOf="@+id/single_comment_image_iv"
+            android:layout_below="@+id/single_comment_name_tv"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/single_comment_comment_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/single_comment_comment_body"
+            android:textColor="@color/custom_black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_toEndOf="@+id/single_comment_image_iv"
+            android:layout_below="@+id/single_comment_time_tv" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/single_comment_reply_comment_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/single_comment_reply"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/dark_blue"
+            android:textSize="14sp"
+            android:layout_toEndOf="@+id/single_comment_image_iv"
+            android:layout_below="@+id/single_comment_comment_tv"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#545458"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/single_comment_image_iv"
+            android:layout_below="@id/single_comment_reply_comment_tv"
+             />
+    </RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/failed_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    tools:context=".ui.FailedAuthorizationFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/fragment_failed_authorization_tb"
+        android:layout_width="wrap_content"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/up_button" />
+
+    <ImageView
+        android:id="@+id/fragment_failed_authorization_iv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="80dp"
+        android:contentDescription="@string/fragment_failed_authorization_errorImage"
+        android:scaleType="fitCenter"
+        android:src="@drawable/retry_image"
+        app:layout_constraintEnd_toEndOf="@+id/fragment_failed_authorization_tryAgain_btn"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/fragment_failed_authorization_tryAgain_btn"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_failed_authorization_tb" />
+
+    <TextView
+        android:id="@+id/fragment_failed_authorization_ooops_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/fragment_failed_authorization_ooops"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_failed_authorization_iv" />
+
+    <TextView
+        android:id="@+id/fragment_failed_authorization_errorMessage_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="@string/fragment_failed_authorization_errorMessage"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_failed_authorization_tryAgain_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_failed_authorization_ooops_tv" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fragment_failed_authorization_tryAgain_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#27AE60"
+        android:padding="16dp"
+        android:text="@string/fragment_failed_authorization_tryAgain"
+        android:textAllCaps="false"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_failed_authorization_back_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fragment_failed_authorization_back_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="68dp"
+        android:backgroundTint="#4F4F4F"
+        android:padding="16dp"
+        android:text="@string/fragment_failed_authorization_back"
+        android:textAllCaps="false"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/fragment_failed_authorization_tryAgain_btn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/fragment_failed_authorization_tryAgain_btn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

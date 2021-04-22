@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_new_request"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.NewRequestFragment">
+
+    <TextView
+        android:id="@+id/fragment_new_request_feedLabel_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/feed"
+        android:textColor="@color/custom_black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_new_request_toolbar_tb" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fragment_new_request_categories_sp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        app:boxBackgroundColor="#F2F2F7"
+        app:boxStrokeWidth="0dp"
+        app:endIconDrawable="@drawable/ic_arrow_down"
+        app:endIconTint="#3DDC84"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_new_request_feedLabel_tv">
+
+        <AutoCompleteTextView
+            android:id="@+id/fragment_new_request_categories_at"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:inputType="none"
+            android:text="@string/fragment_new_request_spinner_text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/fragment_new_request_subjectLabel_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/subject"
+        android:textColor="@color/custom_black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_new_request_categories_sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fragment_new_request_subject_tl"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="5dp"
+        app:boxBackgroundColor="#F2F2F7"
+        app:boxStrokeWidth="0dp"
+        app:errorIconDrawable="@null"
+        app:layout_constraintEnd_toEndOf="@+id/fragment_new_request_categories_sp"
+        app:layout_constraintStart_toStartOf="@+id/fragment_new_request_categories_sp"
+        app:layout_constraintTop_toBottomOf="@id/fragment_new_request_subjectLabel_tv">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fragment_newRequest_request_subject_et"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/request_subject"
+            android:inputType="textImeMultiLine"
+            android:maxLength="120"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/fragment_new_request_descLabel_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/description"
+        android:textColor="@color/custom_black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_new_request_subject_tl" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fragment_new_request_description_tl"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        app:boxBackgroundColor="#F2F2F7"
+        app:boxStrokeWidth="0dp"
+        app:errorIconDrawable="@null"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_new_request_submitBtn_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_new_request_descLabel_tv">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fragment_new_request_description_et"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:hint="@string/request_body"
+            android:inputType="textImeMultiLine|textMultiLine"
+            android:maxLength="300" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fragment_new_request_submitBtn_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:backgroundTint="@color/get_started_green"
+        android:paddingVertical="17dp"
+        android:text="@string/submit"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:cornerRadius="14dp"
+        app:layout_constraintBottom_toTopOf="@id/fragment_new_request_backBtn_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fragment_new_request_backBtn_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/back_button_color"
+        android:paddingVertical="17dp"
+        android:text="@string/back"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:cornerRadius="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/fragment_new_request_toolbar_tb"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimaryVariant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/fragment_new_request_back_arrow_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="@string/edit_fragment_profile_back_tv"
+            android:textColor="@color/color_primary"
+            android:fontFamily="@font/montserrat"
+            android:textSize="18sp"
+            app:drawableStartCompat="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/submit_a_new_request"
+            android:textColor="@color/custom_black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

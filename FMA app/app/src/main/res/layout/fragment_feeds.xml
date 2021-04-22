@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_feeds"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.feed_categories.FeedsFragment">
+
+    <include
+        android:id="@+id/feedsToolBar"
+        layout="@layout/feeds_tool_bar_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        app:layout_constraintBottom_toBottomOf="@id/fragment_feeds_tabLayout_tl" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/fragment_feeds_tabLayout_tl"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/feedsToolBar"
+        app:tabBackground="@drawable/tab_background_selector"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0.0001dp"
+        app:tabMode="auto"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="@color/color_primary" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/feedsViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/fragment_feeds_tabLayout_tl"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

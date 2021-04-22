@@ -1,0 +1,21 @@
+package com.decagon.facilitymanagementapp_group_one.utils
+
+const val DEFAULT_BUFFER_SIZE = 2048
+const val ID = "id"
+const val TOKEN = "token"
+const val IMAGE_URL =  "imageUrl"
+const val IS_PROFILE_COMPLETED = "isProfileCompleted"
+const val AUTH_PREF = "AuthSharedPref"
+const val USER_PREF = "UserSharedPref"
+const val PROFILE_PREF = "UserProfilePref"
+const val LOG_STATE_PREF = "LoginStatePref"
+const val LOGIN_STATE = "login"
+const val USER_DISPLAY_NAME = "name"
+const val USER_FIRST_NAME = "firstName"
+const val USER_LAST_NAME = "lastName"
+const val USER_NAME = "userName"
+const val USER_MAIL = " mail"
+const val GENDER = "gender"
+const val SQUAD = "squad"
+const val STACK = "stack"
+const val MOBILE = "mobile"
